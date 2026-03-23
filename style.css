@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  overscroll-behavior: none;
+  background-image: url("./imgs/onepiece5.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 1.5rem 0.5rem;
+  background: linear-gradient(to bottom, #000 0%, #00000000 100%);
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.7rem;
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+
+nav a.icon {
+  display: none;
+}
+
+/* HERO SECTION */
+.section-fade {
+  height: 80px;
+  border: none;
+  background: linear-gradient(to bottom, transparent 0%, #000000c9 100%);
+}
+
+.hero {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.update {
+  background-color: #000000c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 22vh;
+  font-size: 1.2rem;
+}
+
+.hero h2 {
+  line-height: 2.7rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.subscribe-note {
+  font-style: italic;
+  color: #9f9f9f;
+  margin-bottom: 0.6rem;
+}
+
+.new-chapters {
+  list-style: none;
+  text-align: center;
+}
+
+.new-chapters a {
+  cursor: pointer;
+  color: #9f9f9f;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.new-chapters a:hover {
+  color: #e1e1e1;
+}
+
+/* CHAPTERS PAGE */
+.chapters {
+  height: 100vh;
+  width: 100%;
+  background-color: #000000c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3rem;
+}
+
+.summary h2 {
+  font-size: 5rem;
+}
+
+.summary p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.chapters-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.chapters-list li {
+  padding: 0.3rem 0;
+  border-bottom: 2px solid #fff;
+}
+
+.chapters-list li:first-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    overscroll-behavior: auto;
+  }
+
+  nav {
+    line-height: 2rem;
+  }
+
+  nav ul {
+    font-size: 1.5rem;
+    display: none;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  nav #nav-links {
+    display: none;
+  }
+
+  nav a.icon {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  nav .chapters-link {
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+}
